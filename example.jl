@@ -23,7 +23,6 @@ Pkg.instantiate()
 using SphericalHarmonicExpansions, HDF5
 using NLsolve # used to find FFPs
 using PyPlot # used for visualization
-using LazyArtifacts # used to download the data
 
 # Variabels for polynomial expansions
 @polyvar x y z
@@ -64,7 +63,7 @@ coeffs, expansion, func = magneticField(coords,field, R,center,4,x,y,z)
 ######################
 # 3. Post Processing #
 ######################
-## 3.1 Translation in the Hall sensor
+## 3.1 Translation of the three individual sensors in the Hall-effect sensor
 # Translation vectors for all three directions
 v = [-0.0018   -0.0018   -0.0018;
       0.0       0.00208   0.0;
