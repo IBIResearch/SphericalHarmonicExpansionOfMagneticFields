@@ -1,12 +1,12 @@
 # Representation of Magnetic Fields using Solid Harmonic Expansions - Example
 
-This repository contains example code to represent a magnetic field with a solid spherical harmonic expansion. Therefore, a spherical t-design is measured on a sphere to calculate the coefficients of the expansion by an efficient quadrature. Then, the magnetic field can be described by 
+This repository contains example code to represent a static magnetic field with a solid spherical harmonic expansion. Therefore, a spherical t-design is measured on a sphere to calculate the coefficients of the expansion by an efficient quadrature. Then, the magnetic field can be described by 
 ```math 
         \boldsymbol B^{\boldsymbol\rho}(\boldsymbol a) = 
         \sum_{l=0}^L\sum_{m=-l}^l \boldsymbol\gamma_{l,m}(\boldsymbol\rho) Z_l^m(\boldsymbol a)
         \qquad \forall \boldsymbol a\in\mathcal{B}_R(\boldsymbol 0), 
 ```
-where $\boldsymbol B^{\boldsymbol\rho}:\Omega \subseteq\mathbb{R}^3 \rightarrow \mathbb{R}^3$ is the magnetic field with indicated origin of the coordinate system $\boldsymbol\rho\in\Omega$, $Z_l^m : \mathbb{R} \rightarrow \mathbb{R}$ are the normalized real solid spherical harmonics, and $\mathcal B_R(\boldsymbol 0)$ is a ball with radius $R$ defined the measurement. Finally, $\boldsymbol\gamma_{l,m}(\boldsymbol\rho)\in\mathbb{R}^3$ are the coefficients, which are calculated in this code example.
+where $\boldsymbol B^{\boldsymbol\rho}:\Omega \subseteq\mathbb{R}^3 \rightarrow \mathbb{R}^3$ is the magnetic field with indicated origin of the coordinate system $\boldsymbol\rho\in\Omega$, $Z_l^m : \mathbb{R} \rightarrow \mathbb{R}$ are the normalized real solid spherical harmonics, and $\mathcal B_R(\boldsymbol 0)$ is a ball with radius $R$ defined by the measurement. Finally, $\boldsymbol\gamma_{l,m}(\boldsymbol\rho)\in\mathbb{R}^3$ are the coefficients, which are calculated in this code example.
 
 
 The theory and methods are described in the associated publication
