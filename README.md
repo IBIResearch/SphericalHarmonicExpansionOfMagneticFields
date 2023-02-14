@@ -1,12 +1,12 @@
 # Representation of Magnetic Fields using Solid Harmonic Expansions - Example
 
 This repository contains example code to represent a magnetic field with a solid spherical harmonic expansion. Therefore, a spherical t-design is measured on a sphere to calculate the coefficients of the expansion by an efficient quadrature. Then, the magnetic field can be described by 
-    $$ 
-        \bm B^{\boldsymbol\rho}(\bm a) = 
-        \sum_{l=0}^L\sum_{m=-l}^l \boldsymbol\gamma_{l,m}(\boldsymbol\rho) Z_l^m(\bm a)
-        \qquad \forall \bm a\in\mathcal{B}_R(\bm 0), 
-    $$
-where $\bm B^{\boldsymbol\rho}:\Omega \subseteq\mathbb{R}^3 \rightarrow \mathbb{R}^3$ is the magnetic field with indicated origin of the coordinate system $\boldsymbol\rho\in\Omega$, $Z_l^m : \mathbb{R} \rightarrow \mathbb{R}$ are the normalized real solid spherical harmonics, and $\mathcal{B}_R(\bm 0)$ is a ball with radius $R$ defined the measurement. Finally, $\boldsymbol\gamma_{l,m}(\boldsymbol\rho)\in\mathbb{R}^3$ are the coefficients, which are calculated in this code example.
+```math 
+        \boldsymbol B^{\boldsymbol\rho}(\boldsymbol a) = 
+        \sum_{l=0}^L\sum_{m=-l}^l \boldsymbol\gamma_{l,m}(\boldsymbol\rho) Z_l^m(\boldsymbol a)
+        \qquad \forall \boldsymbol a\in\mathcal{B}_R(\boldsymbol 0), 
+```
+where $\boldsymbol B^{\boldsymbol\rho}:\Omega \subseteq\mathbb{R}^3 \rightarrow \mathbb{R}^3$ is the magnetic field with indicated origin of the coordinate system $\boldsymbol\rho\in\Omega$, $Z_l^m : \mathbb{R} \rightarrow \mathbb{R}$ are the normalized real solid spherical harmonics, and $\mathcal B_R(\boldsymbol 0)$ is a ball with radius $R$ defined the measurement. Finally, $\boldsymbol\gamma_{l,m}(\boldsymbol\rho)\in\mathbb{R}^3$ are the coefficients, which are calculated in this code example.
 
 
 The theory and methods are described in the associated publication
@@ -37,4 +37,4 @@ The main functions for calculating and shifting the coefficients are provided by
 
 ## Open MPI Data
 
-The measurement data associated to this project stems from a $2\,\textup{T m}^{-1}$ magnetic gradient field used for spatial encoding in magnetic particle imaging (MPI). The data is stored in the [HDF5 file format](https://www.hdfgroup.org/solutions/hdf5/) and can be found in the `data` folder.
+The measurement data associated to this project stems from a $2~\textup{T m}^{-1}$ magnetic gradient field used for spatial encoding in magnetic particle imaging (MPI). The data is stored in the [HDF5 file format](https://www.hdfgroup.org/solutions/hdf5/) and can be found in the `data` folder.
