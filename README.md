@@ -11,7 +11,8 @@ where $\boldsymbol B^{\boldsymbol\rho}:\Omega \subseteq\mathbb{R}^3 \rightarrow 
 
 The theory and methods are described in the associated publication
 
-M. Boberg, T. Knopp, and M. Möddel. *(under review)*. Unique Compact Representation of Magnetic Fields using Truncated Solid Harmonic Expansions. 
+M. Boberg, T. Knopp, and M. Möddel. *(under review)*. Unique Compact Representation of Magnetic Fields using Truncated Solid Harmonic Expansions. preprint: [10.48550/arXiv.2302.07591](https://doi.org/10.48550/arXiv.2302.07591)
+
 
 
 
