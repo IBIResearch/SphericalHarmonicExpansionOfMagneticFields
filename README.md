@@ -11,7 +11,7 @@ where $\boldsymbol B^{\boldsymbol\rho}:\Omega \subseteq\mathbb{R}^3 \rightarrow 
 
 The theory and methods are described in the associated publication
 
-M. Boberg, T. Knopp, and M. Möddel. *(under review)*. Unique Compact Representation of Magnetic Fields using Truncated Solid Harmonic Expansions. preprint: [10.48550/arXiv.2302.07591](https://doi.org/10.48550/arXiv.2302.07591)
+M. Boberg, T. Knopp, and M. Möddel. (2025). Unique Compact Representation of Magnetic Fields using Truncated Solid Harmonic Expansions. *European Journal of Applied Mathematics*. 36(5):1012-1039. doi: [10.1017/S0956792524000883](https://doi.org/10.1017/S0956792524000883).
 
 
 
@@ -33,7 +33,7 @@ The example is structured into three parts:
     * Additionally, an error propagation of the measurement errors is provided.
 3. Visualizing of the final coefficients and magnetic field.
 
-The main functions for calculating and shifting the coefficients are provided by the package [SphericalHarmonicExpansions.jl](https://github.com/hofmannmartin/SphericalHarmonicExpansions.jl). All functions that are magnetic field specific (like the calculation of the field-free-point or visualization) are provided in the utils folder.
+The main functions for calculating and shifting the coefficients are provided by the package [SphericalHarmonicExpansions.jl](https://github.com/IBIResearch/SphericalHarmonicExpansions.jl). All functions that are magnetic field specific (like the calculation of the field-free-point or visualization) are provided in the utils folder.
 
 
 ## Open MPI Data
